@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         falseButton=findViewById(R.id.false_button);
         nextButton=findViewById(R.id.next_button);
         questionTextView=findViewById(R.id.question_text_view);
-        //setNextQuestion();
+        setNextQuestion();
         trueButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View w){
@@ -90,13 +90,6 @@ public class MainActivity extends AppCompatActivity {
         //appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
